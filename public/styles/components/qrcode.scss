@@ -1,0 +1,25 @@
+.qrcode-container{
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    padding: 1.3rem;
+    .qrcode-comp-img{
+        margin-right: .5rem;
+        width: 4.167rem;
+        height: 4.167rem;
+    }
+    .qrcode-comp-content{
+        .headline{
+            font-size: 1.167rem;
+            font-weight: 600;
+            color: #333; 
+        }
+        .desc{
+            margin-top: .5rem;
+            font-size: 1rem;
+            color: #909090; 
+        }
+    }
+}

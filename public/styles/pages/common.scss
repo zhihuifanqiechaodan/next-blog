@@ -1,26 +1,9 @@
+html{
+  font-size: 12px;
+}
 body {
     background-color: #f6f6f6;
 }
-
-
-  .comm-main{
-    margin-top: .5rem;
-    .comm-left{
-        background-color: #FFF;
-        padding:.3rem;
-        border-radius: .3rem;
-        border-bottom:1px solid #eee;
-      }
-      .comm-right{
-        background-color: #FFF;
-        margin-left: .5rem;
-        padding:.3rem;
-        border-radius: .3rem;
-        border-bottom:1px solid #eee;
-      
-      }
-  }
-
   .comm-box{
     background-color: #FFF;
     margin-left: .5rem;
@@ -29,3 +12,9 @@ body {
     border:1px solid #eee;
     box-sizing: border-box;
   }
+
+  .icon-line::after{
+    content: "·";
+    margin: 0 .5em;
+    color: #b2bac2;
+}

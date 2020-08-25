@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import Head from 'next/head'
 import Header from '../components/Header'
+import Qrcode from '../components/Qrcode'
 import Author from '../components/Author'
 import Advert from '../components/Advert'
 import Footer from '../components/Footer'
@@ -32,8 +33,8 @@ const Home = () => {
       {/* 公共头部 */}
       <Header />
       {/* 主体内容 */}
-      <Row className="comm-main" type="flex" justify="center">
-        <Col className="comm-left" xs={24} sm={24} md={16} lg={18} xl={10}  >
+      <Row className="timeline-container" type="flex" justify="space-between">
+        <Col className="timeline-entry-list" xs={24} sm={24} md={17}>
           <List
             header={<div>最新日志</div>}
             footer={<div>Footer</div>}
@@ -42,19 +43,21 @@ const Home = () => {
             dataSource={mylist}
             renderItem={item => (
               <List.Item>
-                <div className="list-title">{item.title}</div>
-                <div className="list-icon">
-                  <span><IdcardOutlined /> 2019-06-28</span>
-                  <span><IdcardOutlined /> 视频教程</span>
-                  <span><IdcardOutlined /> 5498人</span>
+                <div className="entry-list-icon">
+                  <IdcardOutlined style={{ fontSize: '13px' }} /> <span className="icon-line">视频教程</span>
+                  <IdcardOutlined style={{ fontSize: '13px' }} /> <span className="icon-line">2019-06-28</span>
+                  <IdcardOutlined style={{ fontSize: '13px' }} /> <span>5498人</span>
+
                 </div>
-                <div className="list-context">{item.context}</div>
+                <div className="entry-list-title">{item.title}</div>
+                <div className="entry-list-context">{item.context}</div>
               </List.Item>
             )}
           />
         </Col>
 
-        <Col className="comm-right" xs={0} sm={0} md={7} lg={5} xl={4}>
+        <Col className="sidebar" xs={0} sm={0} md={6} offset={1}>
+          <Qrcode />
           <Author />
           <Advert />
           <Footer />

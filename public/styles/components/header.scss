@@ -1,25 +1,33 @@
-.header{
-    padding: 0 .4rem;
+.header-wrapper{
     background-color: #fff;
     overflow: hidden;
     border-bottom:1px solid #ccc;
     box-sizing: border-box;
-    .header-logo{
-        line-height: 48px;
-        color:#1e90ff;
-        font-size: 1.4rem;
-        text-align: left;
-    }
-    .header-txt{
-        font-size: 0.6rem;
-        color: #999;
-        padding-left: 0.3rem;
-    }
-    .ant-menu-item{
-        span{
-            vertical-align: middle;
-            color: #999999;
+    .header-container{
+        max-width: 960px;
+        margin: 0 auto;
+        .header-logo{
+            line-height: 48px;
+            color:#1e90ff;
+            font-size: 1.4rem;
+            text-align: left;
+        }
+        .header-txt{
+            font-size: 0.6rem;
+            color: #999;
+            padding-left: 0.3rem;
+        }
+        .header-comp-menu{
+            display: flex;
+            justify-content: flex-end;
+            .ant-menu-item{
+                span{
+                    vertical-align: middle;
+                    color: #999999;
+                }
+            }
         }
     }
+
 }
 

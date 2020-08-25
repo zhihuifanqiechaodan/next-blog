@@ -4,14 +4,14 @@ import { IdcardOutlined } from '@ant-design/icons';
 import '../public/styles/components/header.scss'
 
 const Header = () => (
-    <div className="header">
-        <Row type="flex" justify="center">
-            <Col xs={24} sm={24} md={10} lg={15} xl={12}>
+    <div className="header-wrapper">
+        <Row type="flex" justify="center" className="header-container" >
+            <Col xs={24} sm={24} md={8}>
                 <span className="header-logo">只会番茄炒蛋</span>
                 <span className="header-txt">WEB前端开发攻城狮</span>
             </Col>
 
-            <Col xs={0} sm={0} md={14} lg={8} xl={6}>
+            <Col xs={0} sm={0} md={16} className="header-comp-menu" >
                 <Menu mode="horizontal">
                     <Menu.Item key="home">
                         <IdcardOutlined style={{ fontSize: '18px' }} />
