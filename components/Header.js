@@ -7,8 +7,8 @@ const Header = () => (
     <div className="header-wrapper">
         <Row type="flex" justify="center" className="header-container" >
             <Col xs={24} sm={24} md={8}>
-                <span className="header-logo">只会番茄炒蛋</span>
-                <span className="header-txt">WEB前端开发攻城狮</span>
+                <img className="header-logo" src="http://maijian-prod.oss-cn-beijing.aliyuncs.com/ale-maijian/logo.png"></img>
+                {/* <span className="header-txt">WEB前端开发攻城狮</span> */}
             </Col>
 
             <Col xs={0} sm={0} md={16} className="header-comp-menu" >

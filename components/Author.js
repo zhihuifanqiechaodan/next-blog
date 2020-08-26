@@ -1,20 +1,26 @@
 import { Avatar, Divider } from 'antd'
-import { UserOutlined } from '@ant-design/icons';
+import { UserOutlined ,RightOutlined } from '@ant-design/icons';
 
 import '../public/styles/components/author.scss'
 
 const Author = () => {
 
     return (
-        <div className="author-div comm-box">
-            <div> <Avatar size={100} src="http://blogimages.jspang.com/blogtouxiang1.jpg" /></div>
-            <div className="author-introduction">
-                光头程序员，专注于WEB和移动前端开发。要录1000集免费前端视频的傻X。此地维权无门，此时无能为力，此心随波逐流。
-                <Divider>社交账号</Divider>
+        <div className="author-container">
+            <div className="author-comp-header">🎖️作者介绍</div>
+            <div className="author-comp-describe">
+                <Avatar className="author-img" size={100} src="http://maijian-prod.oss-cn-beijing.aliyuncs.com/ale-maijian/author.png" />
+                <div className="author-introduction">Enjoy when you can, and endure when you must。</div>
+            </div>
+            <Divider>社交账号</Divider>
+            <div className="social-item">
                 <Avatar size={28} icon={<UserOutlined />} className="account" />
                 <Avatar size={28} icon={<UserOutlined />} className="account" />
                 <Avatar size={28} icon={<UserOutlined />} className="account" />
-
+            </div>
+            <div className="more">
+                <span>更多介绍</span>
+                <RightOutlined style={{ fontSize: '16px', color: '#007fff' }} />
             </div>
         </div>
     )

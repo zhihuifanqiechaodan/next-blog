@@ -1,29 +1,39 @@
 .header-wrapper{
-    background-color: #fff;
+    background-color: #202124;
     overflow: hidden;
     border-bottom:1px solid #ccc;
     box-sizing: border-box;
     .header-container{
         max-width: 960px;
         margin: 0 auto;
+        line-height: 60px;
         .header-logo{
-            line-height: 48px;
+            height: 50px;
             color:#1e90ff;
             font-size: 1.4rem;
             text-align: left;
         }
         .header-txt{
-            font-size: 0.6rem;
-            color: #999;
+            font-size: 1.2rem;
+            color: #fff;
             padding-left: 0.3rem;
+            font-weight: 600;
         }
         .header-comp-menu{
             display: flex;
             justify-content: flex-end;
+            .ant-menu{
+                 background-color: #202124;
+                 border-bottom: none;
+                 .ant-menu-item-selected, .ant-menu-item-active{
+                    color: #46bd87;
+                    border-color: #46bd87;
+                }
+            }
             .ant-menu-item{
+                color: #ffffff;
                 span{
                     vertical-align: middle;
-                    color: #999999;
                 }
             }
         }

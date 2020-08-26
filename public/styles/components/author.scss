@@ -1,18 +1,47 @@
-.author-div{
-    text-align: center;
-    padding: 1rem;
-
-}
-.author-div div{
-    margin-bottom: 1rem;
-
-}
-.author-introduction{
-    font-size:.8rem;
-    color: #999;
-}
-.account{
-    background-color: #999;
-    margin-left: .5rem;
-    margin-right: .5rem;
+.author-container{
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    border-radius: 2px;
+    margin-bottom: 1.3rem;
+    font-size: 1.16rem;
+    line-height: 1.29;
+    color: #333;
+    .author-comp-header{
+        padding: 1rem 1.3rem;
+        border-bottom: 1px solid hsla(0,0%,59.2%,.1);
+    }
+    .author-comp-describe{
+        padding: 1rem 1.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .author-img{
+            margin-bottom: 1rem;
+        }
+       
+    }
+    .ant-divider-horizontal.ant-divider-with-text{
+        margin: 0.5rem 0;
+    }
+    .author-introduction{
+        color: #909090;
+        font-size: 1rem;
+        overflow: hidden;
+    }
+    .social-item{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .more{
+        color: #007fff;
+        padding: 1rem 0;
+        text-align: center;
+        border-top: 1px solid hsla(0,0%,59.2%,.1); 
+        .anticon{
+            margin-left: 5px;
+        }
+        span{
+            vertical-align: middle;
+        }
+    }
 }
