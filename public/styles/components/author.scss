@@ -1,47 +1,73 @@
-.author-container{
-    background-color: #fff;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+.author-container {
+    background-color: #181818;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
     border-radius: 2px;
     margin-bottom: 1.3rem;
     font-size: 1.16rem;
     line-height: 1.29;
     color: #333;
-    .author-comp-header{
-        padding: 1rem 1.3rem;
-        border-bottom: 1px solid hsla(0,0%,59.2%,.1);
+
+    .author-comp-title {
+        padding: 1rem 0;
+        border-bottom: 1px solid #333;
+        color: rgba(255, 255, 255, 0.8);
     }
-    .author-comp-describe{
-        padding: 1rem 1.3rem;
+
+    .author-comp-describe {
+        padding: 1rem 1.3rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        .author-img{
+
+        .author-img {
             margin-bottom: 1rem;
         }
-       
+
     }
-    .ant-divider-horizontal.ant-divider-with-text{
+
+    .ant-divider-horizontal.ant-divider-with-text {
         margin: 0.5rem 0;
     }
-    .author-introduction{
-        color: #909090;
+
+    .author-introduction {
+        color: rgba(255, 255, 255, 0.8);
         font-size: 1rem;
         overflow: hidden;
     }
-    .social-item{
+
+    .author-more {
+        cursor: pointer;
+        color: #3eaf7c;
+        padding: .5rem 0;
         text-align: center;
-        margin-bottom: 1rem;
-    }
-    .more{
-        color: #007fff;
-        padding: 1rem 0;
-        text-align: center;
-        border-top: 1px solid hsla(0,0%,59.2%,.1); 
-        .anticon{
+
+        .anticon {
             margin-left: 5px;
         }
-        span{
-            vertical-align: middle;
+
+        span {
+            font-size: 1rem;
+        }
+    }
+
+    .ant-divider {
+        .ant-divider-inner-text {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    .ant-divider-horizontal.ant-divider-with-text::before,
+    .ant-divider-horizontal.ant-divider-with-text::after {
+        border-color: #333;
+    }
+
+    .author-comp-social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        .social-item {
+            margin-right: 0.5rem;
         }
     }
 }

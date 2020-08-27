@@ -1,9 +1,10 @@
-.hero-container{
+.hero-container {
     position: relative;
     height: 450px;
     text-align: center;
     overflow: hidden;
-    .hero-comp-mask{
+
+    .hero-comp-mask {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -12,7 +13,8 @@
         z-index: -1;
         background: url(http://maijian-prod.oss-cn-beijing.aliyuncs.com/ale-maijian/bg.png) center center / cover no-repeat;
     }
-    .hero-comp-img{
+
+    .hero-comp-img {
         max-height: 150px;
         display: block;
         margin: 5rem auto 0px;
@@ -20,7 +22,8 @@
         transform: translateY(0px);
         opacity: 1;
     }
-    .hero-comp-desc{
+
+    .hero-comp-desc {
         transition: all 0.25s ease-in-out 0.08s;
         transform: translateY(0px);
         opacity: 1;

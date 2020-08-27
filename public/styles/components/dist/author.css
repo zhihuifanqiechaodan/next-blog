@@ -1,19 +1,58 @@
-.author-div {
-  text-align: center;
-  padding: 1rem;
+.author-container {
+  background-color: #181818;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  margin-bottom: 1.3rem;
+  font-size: 1.16rem;
+  line-height: 1.29;
+  color: #333;
 }
-
-.author-div div {
+.author-container .author-comp-title {
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
+  color: rgba(255, 255, 255, 0.8);
+}
+.author-container .author-comp-describe {
+  padding: 1rem 1.3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.author-container .author-comp-describe .author-img {
   margin-bottom: 1rem;
 }
-
-.author-introduction {
-  font-size: 0.8rem;
-  color: #999;
+.author-container .ant-divider-horizontal.ant-divider-with-text {
+  margin: 0.5rem 0;
 }
-
-.account {
-  background-color: #999;
-  margin-left: 0.5rem;
+.author-container .author-introduction {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  overflow: hidden;
+}
+.author-container .author-more {
+  cursor: pointer;
+  color: #3eaf7c;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.author-container .author-more .anticon {
+  margin-left: 5px;
+}
+.author-container .author-more span {
+  font-size: 1rem;
+}
+.author-container .ant-divider .ant-divider-inner-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+.author-container .ant-divider-horizontal.ant-divider-with-text::before,
+.author-container .ant-divider-horizontal.ant-divider-with-text::after {
+  border-color: #333;
+}
+.author-container .author-comp-social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.author-container .author-comp-social .social-item {
   margin-right: 0.5rem;
 }

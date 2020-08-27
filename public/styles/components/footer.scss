@@ -1,6 +1,11 @@
-.footer-div{
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 2.5rem;
+    border-top: 1px solid rgba(0, 0, 0, .3);
     text-align: center;
-    width: 100%;
-    padding: 1rem;
-    color:#888;
+    color: #5b5b5b;
+    .footer-comp-item{
+        margin-left: 1rem;
+    }
 }

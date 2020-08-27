@@ -5,8 +5,6 @@ import '../public/styles/components/advert.scss'
         <div className="add-div comm-box">
           <div><img src="http://newimg.jspang.com/kaikeba222.png" width="100%" /></div>
           <div><img src="http://newimg.jspang.com/kaikeba222.png" width="100%" /></div>
-          <div><img src="http://newimg.jspang.com/kaikeba222.png" width="100%" /></div>
-          <div><img src="http://newimg.jspang.com/kaikeba222.png" width="100%" /></div>
         </div>
     )
  }

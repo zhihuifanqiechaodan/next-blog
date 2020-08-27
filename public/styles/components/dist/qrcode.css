@@ -1,0 +1,21 @@
+.qrcode-container {
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  padding: 1.3rem 0;
+}
+.qrcode-container .qrcode-comp-img {
+  margin-right: 0.5rem;
+  width: 4.167rem;
+  height: 4.167rem;
+}
+.qrcode-container .qrcode-comp-content .headline {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+.qrcode-container .qrcode-comp-content .desc {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+}

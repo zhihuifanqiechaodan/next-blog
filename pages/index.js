@@ -48,12 +48,19 @@ const Home = () => {
               renderItem={item => (
                 <List.Item>
                   <div className="entry-list-icon">
-                    <IdcardOutlined style={{ fontSize: '13px' }} /> <span className="icon-line">视频教程</span>
-                    <IdcardOutlined style={{ fontSize: '13px' }} /> <span className="icon-line">2019-06-28</span>
-                    <IdcardOutlined style={{ fontSize: '13px' }} /> <span>5498人</span>
-
+                    <div className="list-icon-item">
+                      <IdcardOutlined style={{ fontSize: '0.9rem' }} /> <span>视频教程</span>
+                    </div>
+                    <div className="list-icon-item">
+                      <IdcardOutlined style={{ fontSize: '0.9rem' }} /> <span>2019-06-28</span>
+                    </div>
+                    <div className="list-icon-item">
+                      <IdcardOutlined style={{ fontSize: '0.9rem' }} /> <span>5498人</span>
+                    </div>
                   </div>
-                  <div className="entry-list-title">{item.title}</div>
+                  <div className="entry-list-title">
+                    <span>{item.title}</span>
+                  </div>
                   <div className="entry-list-context">{item.context}</div>
                 </List.Item>
               )}
@@ -64,11 +71,11 @@ const Home = () => {
             <Qrcode />
             <Author />
             <Advert />
-            <Footer />
           </Col>
         </Row>
       </div>
-
+      {/* 公共底部 */}
+      <Footer />
     </>
   )
 }
