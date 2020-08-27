@@ -1,23 +1,20 @@
 .header-wrapper{
-    background-color: #202124;
-    overflow: hidden;
-    border-bottom:1px solid #ccc;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3.6rem;
     box-sizing: border-box;
+    padding: 0 1.5rem;
+    line-height: 3.6rem;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.6);
+    background: #202124;
     .header-container{
         max-width: 960px;
         margin: 0 auto;
-        line-height: 60px;
         .header-logo{
             height: 50px;
-            color:#1e90ff;
-            font-size: 1.4rem;
-            text-align: left;
-        }
-        .header-txt{
-            font-size: 1.2rem;
-            color: #fff;
-            padding-left: 0.3rem;
-            font-weight: 600;
         }
         .header-comp-menu{
             display: flex;
@@ -34,6 +31,7 @@
                 color: #ffffff;
                 span{
                     vertical-align: middle;
+                    font-size: 0.9rem;
                 }
             }
         }

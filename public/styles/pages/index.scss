@@ -1,38 +1,58 @@
-.timeline-container{
-    max-width: 960px;
-    margin: 0 auto;
-    margin-top: 1.5rem;
-    .timeline-entry-list{
-        background-color: #FFF;
-        padding:.3rem;
-        border-radius: .3rem;
-        border-bottom:1px solid #eee;
-        .entry-list-title{
-            margin: .5rem 0 1rem;
-            font-size: 1.4rem;
-            font-weight: 600;
-            line-height: 1.2;
-            color: #2e3135;
-            white-space: nowrap;
+.app-container{
+    padding: 3.6rem 0 0;
+    margin: 0px auto;
+    .timeline-container{
+        max-width: 960px;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        .timeline-entry-list{
+            margin: 0 auto 20px;
+            padding: 16px 20px;
+            width: 100%;
             overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .entry-list-context{
-            font-size: 13px;
-            color: #b2bac2;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 3;
-            overflow: hidden;
-        }
-        .entry-list-icon{
-            font-size: 12px;
-            color: #b2bac2;
-            white-space: nowrap;
-        }
-        .ant-list-bordered{
-          border: none;
-          border-radius:0
-        }
+            border-radius: 0.25rem;
+            box-shadow: 0 1px 6px 0 rgba(0,0,0,.6);
+            box-sizing: border-box;
+            transition: all 0.3s;
+            .entry-list-title{
+                margin: .5rem 0 1rem;
+                font-size: 1.4rem;
+                font-weight: 600;
+                line-height: 1.2;
+                color: #3eaf7c;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .entry-list-context{
+                font-size: 13px;
+                color: #b2bac2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+            }
+            .entry-list-icon{
+                font-size: 12px;
+                color: #b2bac2;
+                white-space: nowrap;
+            }
+            .ant-list-bordered{
+              border: none;
+              border-radius:0
+            }
+            .ant-list-header{
+                color: #3eaf7c;
+                border-color: rgba(0,0,0,.3);
+            }
+            .ant-list-item{
+                border-color: rgba(0,0,0,.3);
+                box-shadow: 0 1px 6px 0 rgba(0,0,0,.6);
+                margin-bottom: 20px;
+            }
+            .ant-list-split.ant-list-something-after-last-item .ant-spin-container > .ant-list-items > .ant-list-item:last-child{
+                border-color: rgba(0,0,0,.3);
+            }
+          }
       }
-  }
+}

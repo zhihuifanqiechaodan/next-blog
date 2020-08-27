@@ -6,6 +6,7 @@ import Qrcode from '../components/Qrcode'
 import Author from '../components/Author'
 import Advert from '../components/Advert'
 import Footer from '../components/Footer'
+import Hero from '../components/Hero'
 
 import { Row, Col, List } from 'antd'
 import { IdcardOutlined } from '@ant-design/icons';
@@ -32,37 +33,42 @@ const Home = () => {
       </Head>
       {/* 公共头部 */}
       <Header />
-      {/* 主体内容 */}
-      <Row className="timeline-container" type="flex" justify="space-between">
-        <Col className="timeline-entry-list" xs={24} sm={24} md={17}>
-          <List
-            header={<div>最新日志</div>}
-            footer={<div>Footer</div>}
-            bordered
-            itemLayout="vertical"
-            dataSource={mylist}
-            renderItem={item => (
-              <List.Item>
-                <div className="entry-list-icon">
-                  <IdcardOutlined style={{ fontSize: '13px' }} /> <span className="icon-line">视频教程</span>
-                  <IdcardOutlined style={{ fontSize: '13px' }} /> <span className="icon-line">2019-06-28</span>
-                  <IdcardOutlined style={{ fontSize: '13px' }} /> <span>5498人</span>
+      <div className="app-container">
+        {/* 背景 */}
+        <Hero />
+        {/* 主体内容 */}
+        <Row className="timeline-container" type="flex" justify="space-between">
+          <Col className="timeline-entry-list" xs={24} sm={24} md={17}>
+            <List
+              header={<div>最新日志</div>}
+              footer={<div>Footer</div>}
+              bordered
+              itemLayout="vertical"
+              dataSource={mylist}
+              renderItem={item => (
+                <List.Item>
+                  <div className="entry-list-icon">
+                    <IdcardOutlined style={{ fontSize: '13px' }} /> <span className="icon-line">视频教程</span>
+                    <IdcardOutlined style={{ fontSize: '13px' }} /> <span className="icon-line">2019-06-28</span>
+                    <IdcardOutlined style={{ fontSize: '13px' }} /> <span>5498人</span>
 
-                </div>
-                <div className="entry-list-title">{item.title}</div>
-                <div className="entry-list-context">{item.context}</div>
-              </List.Item>
-            )}
-          />
-        </Col>
+                  </div>
+                  <div className="entry-list-title">{item.title}</div>
+                  <div className="entry-list-context">{item.context}</div>
+                </List.Item>
+              )}
+            />
+          </Col>
 
-        <Col className="sidebar" xs={0} sm={0} md={6} offset={1}>
-          <Qrcode />
-          <Author />
-          <Advert />
-          <Footer />
-        </Col>
-      </Row>
+          <Col className="sidebar" xs={0} sm={0} md={6} offset={1}>
+            <Qrcode />
+            <Author />
+            <Advert />
+            <Footer />
+          </Col>
+        </Row>
+      </div>
+
     </>
   )
 }
