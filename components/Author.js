@@ -1,5 +1,5 @@
 import { Avatar, Divider } from 'antd'
-import { UserOutlined, RightOutlined } from '@ant-design/icons';
+import { RightOutlined, WechatFilled, GithubFilled, QqCircleFilled } from '@ant-design/icons';
 
 import '../public/styles/components/author.scss'
 
@@ -19,13 +19,13 @@ const Author = () => {
             <Divider>社交账号</Divider>
             <div className="author-comp-social">
                 <div className="social-item">
-                    <Avatar size={28} icon={<UserOutlined />} className="account" />
+                    <WechatFilled />
                 </div>
                 <div className="social-item">
-                    <Avatar size={28} icon={<UserOutlined />} className="account" />
+                    <QqCircleFilled />
                 </div>
                 <div className="social-item">
-                    <Avatar size={28} icon={<UserOutlined />} className="account" />
+                    <GithubFilled />
                 </div>
             </div>
         </div>
