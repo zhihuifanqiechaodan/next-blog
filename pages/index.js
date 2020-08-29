@@ -8,7 +8,7 @@ import Advert from '../components/Advert'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 
-import { Row, Col, List } from 'antd'
+import { Row, Col, List, Pagination, Affix } from 'antd'
 import { IdcardOutlined } from '@ant-design/icons';
 
 import 'antd/dist/antd.css';
@@ -41,7 +41,7 @@ const Home = () => {
           <Col className="timeline-entry-list" xs={24} sm={24} md={17}>
             <List
               header={<div>最新日志</div>}
-              footer={<div>Footer</div>}
+              footer={<Pagination defaultCurrent={1} total={500} />}
               bordered
               itemLayout="vertical"
               dataSource={mylist}
@@ -67,15 +67,19 @@ const Home = () => {
             />
           </Col>
 
-          <Col className="sidebar" xs={0} sm={0} md={6} offset={1}>
-            <Qrcode />
-            <Author />
-            <Advert />
+          <Col xs={0} sm={0} md={6} offset={1}>
+            <div className="sidebar">
+              <Affix offsetTop={60}>
+                <Qrcode />
+                <Author />
+                <Advert />
+              </Affix>
+              </div>
           </Col>
         </Row>
       </div>
-      {/* 公共底部 */}
-      <Footer />
+          {/* 公共底部 */}
+          <Footer />
     </>
   )
 }

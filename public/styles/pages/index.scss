@@ -84,6 +84,8 @@
             .ant-list-header {
                 color: #3eaf7c;
                 border-color: rgba(0, 0, 0, .3);
+                font-size: 1.4rem;
+                font-weight: bold;
             }
 
             .ant-list-item {
@@ -100,6 +102,9 @@
             .ant-list-split.ant-list-something-after-last-item .ant-spin-container>.ant-list-items>.ant-list-item:last-child {
                 border-color: rgba(0, 0, 0, .3);
             }
+            .ant-list-footer{
+                background-color: #ffffff;
+            }
         }
 
         .sidebar {
@@ -107,7 +112,7 @@
             border-radius: 0.25rem;
             box-sizing: border-box;
             padding: 0 15px;
-            background: #181818;
+            background: #202124;
         }
 
         .sidebar:hover {
