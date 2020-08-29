@@ -11,7 +11,7 @@ const Header = () => (
             </Col>
 
             <Col xs={0} sm={0} md={16} className="header-comp-menu" >
-                <Menu mode="horizontal">
+                <Menu selectedKeys={['home']} mode="horizontal">
                     <Menu.Item key="home">
                         <IdcardOutlined style={{ fontSize: '0.9rem' }} />
                         <span>博客首页</span>

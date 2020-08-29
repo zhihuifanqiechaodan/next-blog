@@ -1,0 +1,38 @@
+  
+   .detailed-container{
+    .ant-breadcrumb a{
+        color: #fff;
+    }
+    .ant-breadcrumb a:hover{
+        color: #3eaf7c;
+
+    }
+       .ant-breadcrumb > span:last-child{
+           color: #3eaf7c;
+       }
+       .ant-breadcrumb-separator{
+           color: #fff;
+       }
+   }
+
+   .detailed-header{
+    padding: 1rem 0;
+       .detailed-title{
+           color: #fff;
+       }
+       hr{
+        border: 0;
+        border-top: 1px solid rgba(0,0,0,.3);
+       }
+       .icon-item{
+           margin-right: 1rem;
+           color: #888;
+        .anticon{
+            margin-right: .2rem;
+        }
+       }
+   }
+.detailed-content{
+    padding: 2rem 0;
+    color: #888;
+}
