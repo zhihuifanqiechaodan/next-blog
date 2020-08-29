@@ -11,8 +11,6 @@ import Hero from '../components/Hero'
 import { Row, Col, List, Pagination, Affix } from 'antd'
 import { IdcardOutlined } from '@ant-design/icons';
 
-import 'antd/dist/antd.css';
-import '../public/styles/pages/common.scss'
 import '../public/styles/pages/index.scss'
 
 const Home = () => {
@@ -74,12 +72,12 @@ const Home = () => {
                 <Author />
                 <Advert />
               </Affix>
-              </div>
+            </div>
           </Col>
         </Row>
       </div>
-          {/* 公共底部 */}
-          <Footer />
+      {/* 公共底部 */}
+      <Footer />
     </>
   )
 }
