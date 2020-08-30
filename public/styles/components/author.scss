@@ -1,73 +1,72 @@
 .author-container {
-    background-color: #202124;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
-    border-radius: 2px;
-    margin-bottom: 1.3rem;
-    line-height: 1.29;
-    color: #333;
+  background-color: #202124;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  margin-bottom: 1.3rem;
+  line-height: 1.29;
+  color: #333;
 
-    .author-comp-title {
-        padding: 1rem 0;
-        border-bottom: 1px solid #333;
-        color: rgba(255, 255, 255, 0.8);
+  .author-comp-title {
+    padding: 1rem 0;
+    border-bottom: 1px solid #333;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .author-comp-describe {
+    padding: 1rem 1.3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .author-img {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .ant-divider-horizontal.ant-divider-with-text {
+    margin: 0.5rem 0;
+  }
+
+  .author-introduction {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    overflow: hidden;
+  }
+
+  .author-more {
+    cursor: pointer;
+    color: #3eaf7c;
+    padding: 0.5rem 0;
+    text-align: center;
+
+    .anticon {
+      margin-left: 5px;
     }
 
-    .author-comp-describe {
-        padding: 1rem 1.3rem 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .author-img {
-            margin-bottom: 1rem;
-        }
-
+    span {
+      font-size: 1rem;
     }
+  }
 
-    .ant-divider-horizontal.ant-divider-with-text {
-        margin: 0.5rem 0;
+  .ant-divider {
+    .ant-divider-inner-text {
+      color: rgba(255, 255, 255, 0.8);
     }
+  }
 
-    .author-introduction {
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 1rem;
-        overflow: hidden;
+  .ant-divider-horizontal.ant-divider-with-text::before,
+  .ant-divider-horizontal.ant-divider-with-text::after {
+    border-color: #333;
+  }
+
+  .author-comp-social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    .social-item {
+      margin-right: 0.5rem;
+      color: #3eaf7c;
     }
-
-    .author-more {
-        cursor: pointer;
-        color: #3eaf7c;
-        padding: .5rem 0;
-        text-align: center;
-
-        .anticon {
-            margin-left: 5px;
-        }
-
-        span {
-            font-size: 1rem;
-        }
-    }
-
-    .ant-divider {
-        .ant-divider-inner-text {
-            color: rgba(255, 255, 255, 0.8);
-        }
-    }
-
-    .ant-divider-horizontal.ant-divider-with-text::before,
-    .ant-divider-horizontal.ant-divider-with-text::after {
-        border-color: #333;
-    }
-
-    .author-comp-social {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1rem;
-
-        .social-item {
-            margin-right: 0.5rem;
-            color: #3eaf7c;
-        }
-    }
+  }
 }

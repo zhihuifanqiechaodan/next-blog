@@ -1,28 +1,28 @@
 .qrcode-container {
-    // background-color: #fff;
-    // margin-bottom: 1.5rem;
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    padding: 1.3rem 0;
+  // background-color: #fff;
+  // margin-bottom: 1.5rem;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  padding: 1.3rem 0;
 
-    .qrcode-comp-img {
-        margin-right: .5rem;
-        width: 4.167rem;
-        height: 4.167rem;
+  .qrcode-comp-img {
+    margin-right: 0.5rem;
+    width: 4.167rem;
+    height: 4.167rem;
+  }
+
+  .qrcode-comp-content {
+    .headline {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.8);
     }
 
-    .qrcode-comp-content {
-        .headline {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: rgba(255, 255, 255, 0.8);;
-        }
-
-        .desc {
-            margin-top: .5rem;
-            font-size: .8rem;
-            color: rgba(255, 255, 255, 0.8);;
-        }
+    .desc {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.8);
     }
+  }
 }

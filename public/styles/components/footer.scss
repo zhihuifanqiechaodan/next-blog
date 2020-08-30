@@ -1,21 +1,21 @@
 .footer-container {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 2.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #3eaf7c;
+  font-size: 14px;
+  .footer-comp-item {
     display: flex;
-    justify-content: center;
-    padding: 1.5rem 2.5rem;
-    border-top: 1px solid rgba(0, 0, 0, .3);
-    text-align: center;
-    color: #3eaf7c;
-    font-size: 14px;
-    .footer-comp-item{
-        display: flex;
-        align-items: center;
-        margin-left: 1rem;
-        .anticon{
-            margin-right: 0.5rem;
-            color: #888;
-        }
-        a{
-            color: #3eaf7c;
-        }
+    align-items: center;
+    margin-left: 1rem;
+    .anticon {
+      margin-right: 0.5rem;
+      color: #888;
     }
+    a {
+      color: #3eaf7c;
+    }
+  }
 }

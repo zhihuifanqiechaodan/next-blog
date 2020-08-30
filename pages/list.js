@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import {Row, Col} from 'antd'
+import { Row, Col } from 'antd'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -9,7 +9,7 @@ const List = () => (
     <Head>
       <title>List</title>
     </Head>
-      {/* 公共头部 */}
+    {/* 公共头部 */}
 
     <Header />
     <Row className="comm-main" type="flex" justify="center">
@@ -21,9 +21,9 @@ const List = () => (
         右侧
       </Col>
     </Row>
-      {/* 公共底部 */}
-      <Footer />
- </>
+    {/* 公共底部 */}
+    <Footer />
+  </>
 )
 
 export default List

@@ -1,73 +1,69 @@
-  
-   .detailed-container{
-    .ant-breadcrumb a{
-        color: #fff;
-    }
-    .ant-breadcrumb a:hover{
-        color: #3eaf7c;
+.detailed-container {
+  .ant-breadcrumb a {
+    color: #fff;
+  }
+  .ant-breadcrumb a:hover {
+    color: #3eaf7c;
+  }
+  .ant-breadcrumb > span:last-child {
+    color: #3eaf7c;
+  }
+  .ant-breadcrumb-separator {
+    color: #fff;
+  }
+}
 
-    }
-       .ant-breadcrumb > span:last-child{
-           color: #3eaf7c;
-       }
-       .ant-breadcrumb-separator{
-           color: #fff;
-       }
-   }
-
-   .detailed-header{
-    padding: 1rem 0;
-       .detailed-title{
-           color: #fff;
-       }
-       hr{
-        border: 0;
-        border-top: 1px solid rgba(0,0,0,.3);
-       }
-       .icon-item{
-           margin-right: 1rem;
-           color: #888;
-        .anticon{
-            margin-right: .2rem;
-        }
-       }
-   }
-.detailed-content{
-    padding: 2rem 0;
+.detailed-header {
+  padding: 1rem 0;
+  .detailed-title {
+    color: #fff;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .icon-item {
+    margin-right: 1rem;
     color: #888;
+    .anticon {
+      margin-right: 0.2rem;
+    }
+  }
+}
+.detailed-content {
+  padding: 2rem 0;
+  color: #888;
 }
 
-pre{
-    display: block;
-    background-color:#f3f3f3;
-     padding: .5rem !important;
-     overflow-y: auto;
-     font-weight: 300;
-     font-family: Menlo, monospace;
-     border-radius: .3rem;
+pre {
+  display: block;
+  background-color: #f3f3f3;
+  padding: 0.5rem !important;
+  overflow-y: auto;
+  font-weight: 300;
+  font-family: Menlo, monospace;
+  border-radius: 0.3rem;
 }
-pre{
-    background-color: #283646 !important;
+pre {
+  background-color: #283646 !important;
 }
-pre >code{
-    border:0px !important;
-    background-color: #283646 !important;
-    color:#FFF;
-
+pre > code {
+  border: 0px !important;
+  background-color: #283646 !important;
+  color: #fff;
 }
 code {
-    display: inline-block ;
-    background-color:#f3f3f3;
-    border:1px solid #fdb9cc;
-    border-radius:3px;
-    font-size: 12px;
-    padding-left: 5px;
-    padding-right: 5px;
-    color:#4f4f4f;
-    margin: 0px 3px;
-
+  display: inline-block;
+  background-color: #f3f3f3;
+  border: 1px solid #fdb9cc;
+  border-radius: 3px;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #4f4f4f;
+  margin: 0px 3px;
 }
 
-iframe{
-    height: 34rem;
+iframe {
+  height: 34rem;
 }
